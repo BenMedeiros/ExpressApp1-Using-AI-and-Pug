@@ -246,19 +246,29 @@ html
       document.querySelector('.about-btn').onclick = function(event) {
         event.preventDefault(); // Prevent the default anchor behavior
         showContent('about-content'); // Show the About content
-        document.querySelector('main > h2').style.display = 'none'; // Hide the main sections title
         
         // Hide main section cards
         const sectionCards = document.querySelectorAll('main .section-card');
         sectionCards.forEach(card => card.style.display = 'none'); // Hide the main content
+        
+        // Hide all h2 elements in main
+        const headers = document.querySelectorAll('main > h2');
+        headers.forEach(header => {
+          header.style.display = 'none';
+        });
       };
 
       document.querySelector('.contact-btn').onclick = function(event) {
         event.preventDefault(); // Prevent the default anchor behavior
         showContent('contact-content'); // Show the Contact content
-        document.querySelector('main > h2').style.display = 'none'; // Hide the main sections title
-
+        
         // Hide main section cards
         const sectionCards = document.querySelectorAll('main .section-card');
         sectionCards.forEach(card => card.style.display = 'none'); // Hide the main content
+        
+        // Hide all h2 elements in main
+        const headers = document.querySelectorAll('main > h2');
+        headers.forEach(header => {
+          header.style.display = 'none';
+        });
       };
