@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title My SPA
+    link(rel="stylesheet" href="/stylesheets/spa_ai_template.css") 
+    script(src='/javascripts/href_fragment_click_listener.js')
+
+  body
+    header.header
+      nav.navigation
+        ul
+          li: a(href="#home") Home
+          li: a(href="#about") About
+          li: a(href="#services") Services
+          li: a(href="#contact") Contact
+
+    .container
+      aside.sidebar
+        h2 Sidebar
+        ul
+          li: a(href="#link1") Link 1
+          li: a(href="#link2") Link 2
+          li: a(href="#link3") Link 3
+
+      main.content
+        h1 Main Content Area
+        p Welcome to the main content area of the SPA. Here you can display dynamic content based on navigation or other user actions.
+
+    footer.footer
+      p &copy 2024 My SPA. All rights reserved.
