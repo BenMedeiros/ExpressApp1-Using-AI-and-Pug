@@ -49,6 +49,8 @@
     <Content Include="views\spa_ai_template_5.pug" />
     <Content Include="views\spa_ai_template_4.pug" />
     <Content Include="views\spa_ai_template_6.pug" />
+    <Content Include="views\spa_ai_template_8.pug" />
+    <Content Include="views\spa_ai_template_7.pug" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="middleware\" />
